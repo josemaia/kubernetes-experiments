@@ -6,6 +6,5 @@ Assuming you have a functional kubernetes cluster, deploy by using ```kubectl cr
 
 To remove it, use the reverse: ```kubectl delete -f backend.yaml -f frontend.yaml```.
 
-
 ### Testing
 With a browser or ```curl```, travel to the HTTP URL reported in the frontend deployment.
