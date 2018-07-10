@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: hello
+  namespace: production
 spec:
   selector:
     app: hello
@@ -15,6 +16,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello
+  namespace: production
 spec:
   selector:
     matchLabels:

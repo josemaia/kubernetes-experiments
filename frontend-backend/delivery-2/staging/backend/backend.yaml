@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: hello
+  namespace: staging
 spec:
   selector:
     app: hello
@@ -11,10 +12,11 @@ spec:
     port: 80
     targetPort: http
 ---
-apiVersion: apps/v1
 kind: Deployment
+apiVersion: apps/v1
 metadata:
   name: hello
+  namespace: staging
 spec:
   selector:
     matchLabels:
